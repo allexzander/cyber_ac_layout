@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cyber Academy</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cyber Academy</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
-	<!-- Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works. -->
-	<div class="container">
-    	<div class="row">
-            <div class="col-sm-12">
-                <div class="header">
-                    <nav class="navbar navbar-default main_nav">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-    </div>
-    
-    <ul class="nav navbar-nav pull-right">
-      <li class="dropdown"><button class="dropbtn">Факультеты</button>
-  <div class="dropdown-content text-uppercase">
-    <a href="#">cs go</a>
-    <a href="#">dota 2</a>
-    <a href="#">lol</a>
-    <div><img src="images/dropdown_faculties_down.png"></div>
-  </div></button></li>
-      <li><button type="button" class="btn btn-default">Турниры</button></li>
-      <li><button type="button" class="btn btn-default">Форум</button></li>
-      <li><button type="button" class="btn btn-default text-uppercase" id="login"><img src="images/icon_steam.jpg">login</button></li>
-      <span id="language_menu">
-      <div class="dropdown">
-  <button class="dropbtn"></button>
-  <div class="dropdown-content">
-    <a href="#">en</a>
-    <a href="#">ru</a>
-    <a href="#">de</a>
-  </div>
-</div>
-</span>
-    </ul>
-  </div>
-</nav>
-    </div>
-            </div>
-        </div>
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <div id="banner"><img src="images/banner_cs_go.jpg"/></div>
+                <!-- HEADER -->
+                <div class="header">
+                    <nav class="navbar navbar-default main_nav">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+                            </div>
+                            <ul class="nav navbar-nav pull-right">
+                                <li class="dropdown"><button class="dropbtn">Факультеты</button>
+                                    <div class="dropdown-content text-uppercase">
+                                        <a href="#">cs go</a>
+                                        <a href="#">dota 2</a>
+                                        <a href="#">lol</a>
+                                        <div><img src="images/dropdown_faculties_down.png"></div>
+                                    </div>
+                                </button>
+                            </li>
+                            <li><button type="button" class="btn btn-default">Турниры</button></li>
+                            <li><button type="button" class="btn btn-default">Форум</button></li>
+                            <li><button type="button" class="btn btn-default text-uppercase" id="login"><img src="images/icon_steam.jpg">login</button></li>
+                            <span id="language_menu">
+                                <div class="dropdown">
+                                    <button class="dropbtn"></button>
+                                    <div class="dropdown-content">
+                                        <a href="#">en</a>
+                                        <a href="#">ru</a>
+                                        <a href="#">de</a>
+                                    </div>
+                                </div>
+                            </span>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        <div class="row" id="content">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="section"><img src="images/circle_inner_ornament.png"/>
-                    <div class="description text-uppercase">Изучи механизм игры и взаимодействие с командой</div>
-                    <div class="circle"><img src="images/gears.png"/></div></div>
+    </div>
+    <!-- BANNER -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="banner"><img src="images/banner_cs_go.jpg"/></div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+    <div class="row" id="content">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="section"><img src="images/circle_inner_ornament.png"/>
+                <div class="description text-uppercase">Изучи механизм игры и взаимодействие с командой</div>
+                <div class="circle"><img src="images/gears.png"/></div></div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="section"><img src="images/circle_inner_ornament.png"/>
@@ -77,6 +80,7 @@
                     <div class="circle"><img src="images/trophy.png"/></div></div>
             </div>
         </div>
+        <!-- START COURSE -->
         <div class="row">
             <div class="col-sm-12">
                 <div class="text-center" id="start_course"><button type="button" class="btn btn-default">Начать обучение</button></div>
@@ -84,6 +88,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
+                <!-- PLAYER -->
                 <div id="player">
                     <div id="play_button">
                         <a href="#"><img src="images/player_play_button.png"/></a>
@@ -93,29 +98,32 @@
             </div>
         <div class="row">
             <div class="col-sm-12">
-                <div class="footer"><nav class="navbar navbar-default" id="nav_bottom">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <ul class="nav navbar-nav text-uppercase">
-      <li><a href="#">about</a></li>
-      <li><a href="#">become a coach</a></li>
-      <li><a href="#">faq</a></li>
-      <li><a href="#">support</a></li>
-      <li><a href="#">terms</a></li>
-      <li><a href="#">тренера</a></li>
-    </ul>
-    <ul class="nav navbar-nav nav_social pull-right">
-      <li><a href="#"><img src="images/social_fb.png"/></a></li>
-      <li><a href="#"><img src="images/social_whatsup.png"/></a></li>
-      <li><a href="#"><img src="images/social_twitter.png"/></a></li>
-      <li><a href="#"><img src="images/social_vk.png"/></a></li>
-    </ul>
-  </div>
-</nav></div>
+                <!-- FOOTER -->
+                <div class="footer">
+                    <nav class="navbar navbar-default" id="nav_bottom">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#"></a>
+                            </div>
+                            <ul class="nav navbar-nav text-uppercase">
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">become a coach</a></li>
+                                <li><a href="#">faq</a></li>
+                                <li><a href="#">support</a></li>
+                                <li><a href="#">terms</a></li>
+                                <li><a href="#">тренера</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav nav_social pull-right">
+                                <li><a href="#"><img src="images/social_fb.png"/></a></li>
+                                <li><a href="#"><img src="images/social_whatsup.png"/></a></li>
+                                <li><a href="#"><img src="images/social_twitter.png"/></a></li>
+                                <li><a href="#"><img src="images/social_vk.png"/></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-	</div>
+    </div>
 </body>
 </html>                            
