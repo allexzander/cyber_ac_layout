@@ -111,6 +111,7 @@ body {
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
+    box-shadow: 0px 0px 20px rgba( 255, 255, 255, 0.5);
     border: 0;
 }
 
@@ -260,6 +261,7 @@ body {
 
 #start_course>button {
     background: url("../images/button_start_learning_default.png");
+    box-shadow: 0px 0px 20px rgba( 255, 255, 255, 0.5);
 }
 
 #start_course>button:hover {
