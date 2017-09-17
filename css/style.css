@@ -1,0 +1,314 @@
+body {
+    background: url("../images/background.jpg");
+}
+
+/*fonts*/
+@font-face {
+    font-family: MicraDi;
+    src: url("../fonts/MICRADI_.ttf");
+}
+
+@font-face {
+    font-family: Micra;
+    src: url("../fonts/6626.ttf");
+}
+
+.start_course {
+    margin-bottom: 15px;
+}
+
+#banner img {
+    width: 100%;
+    border: 4px solid #002d54;
+}
+
+/*makes possible to put image instead of text name of the rand*/
+.navbar-brand {
+  padding: 0;
+}
+.navbar-brand>img {
+  height: 100%;
+  width: auto;
+}
+
+/*navbar is made transparent, and color set to specific*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #777;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: MicraDi;
+    color: rgb( 229, 216, 0 );
+}
+/*remove space after navbar*/
+.navbar {
+    margin-bottom: 0;
+}
+
+/*changes space between li elements*/ 
+.navbar-nav > li{
+
+}
+
+#content {
+    margin-top: 60px;
+}
+
+#content.row > div {
+    margin-bottom: 20px;
+}
+
+/*rectangular section with gradient border*/
+.section {
+    min-height: 240px;
+    border: 4px solid transparent;
+    border-image: linear-gradient(to left top, #5da9da, #002d54); /*gradient doesn't work in IE8 and less, discard IE8?*/
+    border-image-slice: 1;
+    background:black;
+    position: relative;
+}
+
+.section>img {
+    position: absolute;
+    top:40px;
+    left: 0;
+}
+
+.description {
+    position: absolute;
+    left:0;
+    bottom:5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Micra;
+    font-size: 10px;
+    color: rgb( 161, 218, 248 );
+}
+
+.description>p {
+    
+}
+
+/*circle is positioned above div's layer with z-index, and placed in top right corner*/
+.circle { 
+   width: 184px;
+   height: 184px;
+   background: black;
+   background: url("../images/circle_bg_merged_completely.png");
+   position: absolute;
+   right: -5px;
+   top: -40px;
+   z-index: 2;
+   padding: 0;
+   /*border: 4px solid royalblue; initial plan was to have rounded border for circle*/
+}
+
+/*circle image is centered horizontalli, and vetically*/
+.circle>img {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;/*this shouldn't be here, but it doesn't work otherwise)*/
+	display: block;
+}
+
+.start_course {
+    background: transparent;
+}
+
+.footer {
+    margin-top: 15px;
+    min-height: 70px;
+}
+
+.main_nav .navbar-nav li>button {
+    text-align: center;
+    color: #e5d800;
+    font-family: MicraDi;
+    min-width: 189px;
+    min-height: 40px;
+    background-color: transparent;
+    background: url("../images/button_nav.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+}
+
+.main_nav .navbar-nav li>button:hover {
+    text-align: center;
+    color: #e5d800;
+    font-family: MicraDi;
+    min-width: 189px;
+    min-height: 40px;
+    background-color: transparent;
+    background: url("../images/button_nav_hover.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+}
+
+.main_nav .navbar-nav #login>img {
+    margin-right: 10px;
+}
+
+.main_nav .navbar-nav #login {
+    text-align: left;
+    min-width: 141px;
+    min-height: 38px;
+    background: url("../images/button_bg_login.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main_nav .navbar-nav #login:hover {
+    text-align: left;
+    min-width: 141px;
+    min-height: 38px;
+    background: url("../images/button_bg_login_hover.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.start_course>button {
+    text-align: center;
+    color: #e5d800;
+    font-family: MicraDi;
+    border-color: transparent;
+    min-width: 226px;
+    min-height: 38px;
+    background: url("../images/button_start_learning_default.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.start_course>button:hover {
+    text-align: center;
+    color: rgb( 229, 216, 0 );
+    font-family: MicraDi;
+    border-color: transparent;
+    min-width: 226px;
+    min-height: 38px;
+    background: url("../images/button_start_learning_hover.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#play_button {
+    margin-left: 290px;
+}
+
+/*Dropdown 2*/
+
+.dropdown .dropbtn {
+    min-width: 39px;
+    min-height: 39px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-left: 15px;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 189px;
+    min-height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-content a {
+    text-align: center;
+    opacity: 1.0;
+    color: white;
+    min-width: 189px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent; color: rgb( 229, 216, 0 );}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+/**/
+
+/*Dropdown*/
+#language_menu .dropdown .dropbtn {
+    background: url("../images/dropdown_toggle.png");
+    min-width: 39px;
+    min-height: 39px;
+    border: none;
+    cursor: pointer;
+}
+
+#language_menu .dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-left: 15px;
+}
+
+#language_menu .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#language_menu .dropdown-content a {
+    text-align: center;
+    color: rgb( 229, 216, 0 );
+    background: url("../images/dropdown_content.png");
+    width: 33px;
+    height: 33px;
+    min-width: 33px;
+    min-height: 33px;
+    text-decoration: none;
+    display: block;
+    padding-top: 4px;
+}
+
+#language_menu .dropdown-content a:hover {background-color: transparent; color:white;}
+
+#language_menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#language_menu .dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+
+#video_description {
+    margin-left: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 70px;
+    margin-top: 5px;
+}
+
+.player {
+    min-height: 70px;
+  font-family: "Micra";
+  color: rgb( 133, 189, 226 );
+    background: url("../images/player_bg.jpg");
+    background-repeat: no-repeat;
+}
+
+/*Dropdown*/
