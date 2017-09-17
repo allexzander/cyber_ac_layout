@@ -1,5 +1,6 @@
 body {
     background: url("../images/background.jpg");
+    margin-top: 20px;
 }
 
 /*fonts*/
@@ -10,16 +11,7 @@ body {
 
 @font-face {
     font-family: Micra;
-    src: url("../fonts/6626.ttf");
-}
-
-.start_course {
-    margin-bottom: 15px;
-}
-
-#banner img {
-    width: 100%;
-    border: 4px solid #002d54;
+    src: url("../fonts/micra.ttf");
 }
 
 /*makes possible to put image instead of text name of the rand*/
@@ -38,26 +30,16 @@ body {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #777;
     background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a {
-    font-family: MicraDi;
-    color: rgb( 229, 216, 0 );
-}
 /*remove space after navbar*/
 .navbar {
     margin-bottom: 0;
 }
 
-/*changes space between li elements*/ 
-.navbar-nav > li{
-
-}
-
 #content {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 #content.row > div {
@@ -84,15 +66,13 @@ body {
     position: absolute;
     left:0;
     bottom:5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: Micra;
-    font-size: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Micra', arial;
+    font-size: 12px;
+    line-height: 1.167;
+    text-align: left;
     color: rgb( 161, 218, 248 );
-}
-
-.description>p {
-    
 }
 
 /*circle is positioned above div's layer with z-index, and placed in top right corner*/
@@ -116,10 +96,6 @@ body {
     margin-right: auto;
     margin-top: 50px;/*this shouldn't be here, but it doesn't work otherwise)*/
 	display: block;
-}
-
-.start_course {
-    background: transparent;
 }
 
 .footer {
@@ -173,34 +149,6 @@ body {
     background: url("../images/button_bg_login_hover.png");
     background-repeat: no-repeat;
     background-size: 100%;
-}
-
-.start_course>button {
-    text-align: center;
-    color: #e5d800;
-    font-family: MicraDi;
-    border-color: transparent;
-    min-width: 226px;
-    min-height: 38px;
-    background: url("../images/button_start_learning_default.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.start_course>button:hover {
-    text-align: center;
-    color: rgb( 229, 216, 0 );
-    font-family: MicraDi;
-    border-color: transparent;
-    min-width: 226px;
-    min-height: 38px;
-    background: url("../images/button_start_learning_hover.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#play_button {
-    margin-left: 290px;
 }
 
 /*Dropdown 2*/
@@ -295,20 +243,75 @@ body {
     background-color: transparent;
 }
 
-#video_description {
-    margin-left: 90px;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 70px;
-    margin-top: 5px;
+/*Banner----------------------*/
+#banner img {
+    width: 100%;
+    border: 4px solid #002d54;
+}
+/*---------------------------*/
+
+/*Start course---------*/
+#start_course {
+    margin-bottom: 15px;
+    background: transparent;
 }
 
-.player {
-    min-height: 70px;
-  font-family: "Micra";
-  color: rgb( 133, 189, 226 );
+#start_course>button, #start_course>button:hover {
+    text-align: center;
+    color: #e5d800;
+    font-family: MicraDi;
+    border-color: transparent;
+    min-width: 226px;
+    min-height: 38px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#start_course>button {
+    background: url("../images/button_start_learning_default.png");
+}
+
+#start_course>button:hover {
+    background: url("../images/button_start_learning_hover.png");
+}
+/*----------------------*/
+
+/*-----------player*/
+#player {
+    height: 70px;
+    font-family: "Micra";
+    color: rgb( 133, 189, 226 );
+    font-size: 14px;
+    font-family: "MicraDi";
+    border: 4px solid transparent;
+    border-image: linear-gradient(to left top, #5da9da, #002d54); /*gradient doesn't work in IE8 and less, discard IE8?*/
+    border-image-slice: 1;
     background: url("../images/player_bg.jpg");
     background-repeat: no-repeat;
 }
+#player #play_button {
+    margin-left: 290px;
+}
 
-/*Dropdown*/
+#player #play_button img{
+    padding: 0;
+    display: inline-block;
+}
+
+#player #video_message {
+    margin-left: 90px;
+    line-height: 64px;
+}
+
+/*----------------*/
+
+/*Bottom navbar---------*/
+#nav_bottom .navbar-nav>li>a {
+    font-family: MicraDi;
+    color: rgb( 229, 216, 0 );
+}
+
+#nav_bottom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+/*----------------------*/
