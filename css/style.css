@@ -103,52 +103,48 @@ body {
     min-height: 70px;
 }
 
-.main_nav .navbar-nav li>button {
+#main_nav .navbar-nav {
+    margin-top: 5px;
+}
+
+#main_nav .navbar-nav li>button, #main_nav .navbar-nav li>button:hover {
     text-align: center;
     color: #e5d800;
     font-family: MicraDi;
     min-width: 189px;
     min-height: 40px;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 0;
+}
+
+#main_nav .navbar-nav li>button {
     background: url("../images/button_nav.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 0;
 }
 
-.main_nav .navbar-nav li>button:hover {
-    text-align: center;
-    color: #e5d800;
-    font-family: MicraDi;
-    min-width: 189px;
-    min-height: 40px;
-    background-color: transparent;
+#main_nav .navbar-nav li>button:hover {
     background: url("../images/button_nav_hover.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 0;
 }
 
-.main_nav .navbar-nav #login>img {
+#main_nav .navbar-nav #login>img {
     margin-right: 10px;
 }
 
-.main_nav .navbar-nav #login {
+#main_nav .navbar-nav #login, #main_nav .navbar-nav #login:hover {
     text-align: left;
     min-width: 141px;
     min-height: 38px;
-    background: url("../images/button_bg_login.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.main_nav .navbar-nav #login:hover {
-    text-align: left;
-    min-width: 141px;
-    min-height: 38px;
+#main_nav .navbar-nav #login {
+    background: url("../images/button_bg_login.png");
+}
+
+#main_nav .navbar-nav #login:hover {
     background: url("../images/button_bg_login_hover.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 /*Dropdown 2*/
