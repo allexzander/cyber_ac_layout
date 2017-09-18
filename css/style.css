@@ -1,5 +1,6 @@
 body {
-    background: url("../images/background.jpg");
+    /*background: url("../images/background.jpg");*/
+	background: url("../images/background_original.jpg");
     margin-top: 20px;
 }
 
@@ -12,6 +13,10 @@ body {
 @font-face {
     font-family: Micra;
     src: url("../fonts/MIC____.TTF");
+}
+
+.button_shadow {
+	box-shadow: 0px 0px 20px rgba(255, 255, 204, 0.5);
 }
 
 /*makes possible to put image instead of text name of the rand*/
@@ -35,7 +40,7 @@ body {
 
 /*remove space after navbar*/
 .navbar {
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 #content {
@@ -65,7 +70,7 @@ body {
 .description {
     position: absolute;
     left:0;
-    bottom:5px;
+    bottom:12px;
     padding-left: 25px;
     padding-right: 25px;
     font-family: 'Micra', arial;
@@ -111,7 +116,6 @@ body {
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
-    box-shadow: 0px 0px 20px rgba( 255, 255, 255, 0.5);
     border: 0;
 }
 
@@ -228,11 +232,15 @@ body {
 
 /*Dropdown*/
 #language_menu .dropdown .dropbtn {
-    background: url("../images/dropdown_toggle.png");
-    min-width: 39px;
-    min-height: 39px;
-    border: none;
-    cursor: pointer;
+    text-align: center;
+    color: rgb( 229, 216, 0 );
+    background: url("../images/dropdown_content.png");
+    width: 33px;
+    height: 33px;
+    min-width: 33px;
+    min-height: 33px;
+    text-decoration: none;
+    display: block;
 }
 
 #language_menu .dropdown {
@@ -260,6 +268,10 @@ body {
     text-decoration: none;
     display: block;
     padding-top: 4px;
+}
+
+#language_menu .dropdown-content #first_link {
+    margin-top: 6px;
 }
 
 #language_menu .dropdown-content a:hover {background-color: transparent; color:white;}
@@ -298,7 +310,6 @@ body {
 
 #start_course>button {
     background: url("../images/button_start_learning_default.png");
-    box-shadow: 0px 0px 20px rgba( 255, 255, 255, 0.5);
 }
 
 #start_course>button:hover {
