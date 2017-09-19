@@ -198,8 +198,6 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    float: right;
-    margin-left: 15px;
 }
 
 .dropdown .dropdown-content {
@@ -248,8 +246,6 @@ body {
 #language_menu .dropdown {
     position: relative;
     display: inline-block;
-    float: right;
-    margin-left: 15px;
 }
 
 #language_menu .dropdown .dropdown-content {
@@ -369,3 +365,13 @@ body {
     min-height: 70px;
 }
 /*----------------------*/
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+
+    .dropdown {
+        margin-left: 15px;
+    }
+}
