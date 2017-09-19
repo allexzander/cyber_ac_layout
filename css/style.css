@@ -1,8 +1,9 @@
 body {
-    /*background: url("../images/background.jpg");*/
-	background: url("../images/background_original.jpg");
+    background: url("../images/background_full_hd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 20px;
-}
+ }
 
 /*fonts*/
 @font-face {
@@ -415,7 +416,7 @@ body {
     }
 }
 
-@media(max-width:767px){
+@media(max-width: 767px) {
 
     .nav_always_horizontal {
         display:flex;
