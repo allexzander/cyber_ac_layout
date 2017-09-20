@@ -1,36 +1,14 @@
 button {
-  background: #50514F;
-  background-image: -webkit-linear-gradient(right, #50514F, #ABAB00);
-  background-image: -moz-linear-gradient(right, #50514F, #ABAB00);
-  background-image: -ms-linear-gradient(right, #50514F, #ABAB00);
-  background-image: -o-linear-gradient(right, #50514F, #ABAB00);
-  background-image: linear-gradient(to left, #50514F, #ABAB00);
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
-  -webkit-box-shadow: 0px 0px 30px #ffffff;
-  -moz-box-shadow: 0px 0px 30px #ffffff;
-  box-shadow: 0px 0px 30px #ffffff;
-  font-family: MicraDi;
-  color: #e5d800;
-  font-size: 12px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border: solid #777777 4px;
-  text-decoration: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#090909+0,090909+0,090909+6,ffd45f+11,000000+20,252525+44,757575+71,8e8e8e+100&1+0,1+8,0.5+79,1+100 */
+background: linear-gradient(to bottom, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+border-image: linear-gradient(to bottom, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3f42', endColorstr='#17160f',GradientType=0 ); /* IE6-9 */
 }
 
 button:hover {
-  background: #ABAB00;
-  background-image: -webkit-linear-gradient(right, #ABAB00, #50514F);
-  background-image: -moz-linear-gradient(right, #ABAB00, #50514F);
-  background-image: -ms-linear-gradient(right, #ABAB00, #50514F);
-  background-image: -o-linear-gradient(right, #ABAB00, #50514F);
-  background-image: linear-gradient(to left, #ABAB00, #50514F);
-  -webkit-box-shadow: 0px 0px 30px #ffffff;
-  -moz-box-shadow: 0px 0px 30px #ffffff;
-  box-shadow: 0px 0px 30px #ffffff;
-  text-decoration: none;
+  background: linear-gradient(to bottom, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  
+  border-image: linear-gradient(to bottom, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3f42', endColorstr='#17160f',GradientType=0 ); /* IE6-9 */
 }
