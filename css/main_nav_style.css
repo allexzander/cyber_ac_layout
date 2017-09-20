@@ -6,22 +6,28 @@
     -moz-border-radius: 6;
     border-radius: 6px;
     min-width: 189px;
-    padding-top: 0;
     min-height: 40px;
+    padding-top: 0;
     background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 100%;
     border: solid 3px;
 }
 
 #main_nav .navbar-nav li>button {
-  border-image: linear-gradient(to bottom, #3b3f42 0%,#f0e7ce 23%,
-  #ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
+  background: linear-gradient(to top, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,
+  rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,
+  rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%);
+  border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,
+  #f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
+  border-image-slice: 1;
 }
 
 #main_nav .navbar-nav li>button:hover {
-    border-image: linear-gradient(to bottom, #3b3f42 0%,#f0e7ce 23%,
-    #ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
+  background: linear-gradient(to top, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,
+  rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,
+  rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%);
+  border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,
+  #ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
+  border-image-slice: 1;
 }
 
 #main_nav .navbar-nav #login>img {
@@ -29,13 +35,9 @@
 }
 
 #main_nav .navbar-nav #login {
-    background: linear-gradient(to top, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    padding-left: 30px;
-    padding-right: 30px;
-    text-decoration: none;
-    border: solid 3px;
-    border-image: linear-gradient(to bottom, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
-    border-image-slice: 1;
+    background: linear-gradient(to top, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,rgba(107,90,43,1) 8%,
+    rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,rgba(37,37,37,0.75) 44%,
+    rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%);
 }
 
 #main_nav .navbar-nav #login, #main_nav .navbar-nav #login:hover {
@@ -44,22 +46,9 @@
     border-image-slice: 1;
 }
 
-#main_nav .navbar-nav li>button {
-  background: linear-gradient(to top, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,
-  #f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
-  border-image-slice: 1;
-}
-
-#main_nav .navbar-nav li>button:hover {
-  background: linear-gradient(to top, rgba(9,9,9,1) 0%,rgba(9,9,9,1) 6%,rgba(107,90,43,1) 8%,rgba(255,212,95,0.98) 11%,rgba(0,0,0,0.92) 20%,rgba(37,37,37,0.75) 44%,rgba(117,117,117,0.56) 71%,rgba(124,124,124,0.5) 79%,rgba(142,142,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
-  border-image-slice: 1;
-}
-
 /*Dropdown 2*/
 
-.dropdown .dropbtn {
+.dropdown .dropbtn, .dropdown:hover .dropbtn {
     padding-top: 0;
     padding: 6px 12px;
 }
@@ -67,6 +56,8 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    background-color: transparent;
+    min-height: 40px;
 }
 
 .dropdown .dropdown-content {
@@ -93,11 +84,6 @@
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: transparent;
-    min-height: 40px;
-}
-
 /**/
 
 /*Dropdown*/
@@ -110,7 +96,6 @@
     min-height: 33px;
     text-decoration: none;
     display: block;
-    min-height: 40px;
     border-radius: 4px;
     padding: 0;
 }
@@ -152,14 +137,4 @@
 #language_menu .dropdown:hover .dropbtn {
     background-color: transparent;
     margin-bottom: 5px;
-}
-
-#language_menu .dropdown .dropbtn {
-    color: rgb( 229, 216, 0 );
-    width: 33px;
-    height: 33px;
-    min-width: 33px;
-    min-height: 33px;
-    text-decoration: none;
-    display: block;
 }
