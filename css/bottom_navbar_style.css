@@ -1,0 +1,10 @@
+/*Bottom navbar---------*/
+#nav_bottom .navbar-nav>li>a {
+    font-family: MicraDi;
+    color: rgb( 229, 216, 0 );
+}
+
+#nav_bottom .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #777;
+}
+/*----------------------*/
