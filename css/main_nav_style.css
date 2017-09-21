@@ -79,6 +79,10 @@
     display: inline-block;
 }
 
+#login img{
+    margin-right: 10px;
+}
+
 #language_menu .dropdown .dropdown-content {
     display: none;
     position: absolute;
