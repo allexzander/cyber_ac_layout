@@ -62,7 +62,7 @@
 
 /*Banner----------------------*/
 #banner_mobile {
-    font-family: MicraDi;
+    font-family: 'Micra', arial;
     color: rgb( 229, 216, 0 );
     font-size: 16px;
     z-index: 1;

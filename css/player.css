@@ -4,7 +4,6 @@
     font-family: "Micra";
     color: rgb( 133, 189, 226 );
     font-size: 14px;
-    font-family: "MicraDi";
     border: 4px solid transparent;
     border-image: linear-gradient(to left top, #5da9da, #002d54); /*gradient doesn't work in IE8 and less, discard IE8?*/
     border-image-slice: 1;

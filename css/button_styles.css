@@ -5,11 +5,14 @@
 .button-golden, .button-golden:hover {
     text-align: center;
     color: #e5d800;
-    font-family: MicraDi;
+    font-family: 'Micra', arial;
+    font-size: 12px;
     min-width: 189px;
     min-height: 40px;
     background-color: transparent;
     border: solid 3px;
+    padding: 0;
+    padding-bottom: 4px;
 }
 
 .button-golden {
