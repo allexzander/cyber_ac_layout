@@ -5,7 +5,7 @@
 /*makes possible to put image instead of text name of the rand*/
 .navbar-brand {
     padding: 0;
-  }
+}
   
   /*navbar is made transparent, and color set to specific*/
   .navbar-default {
@@ -33,15 +33,16 @@
     position: relative;
     display: inline-block;
     background-color: transparent;
-    min-height: 40px;
+    min-height: 33px;
+    color: #e5d800;
+    font-family: MicraDi;
 }
 
 .dropdown .dropdown-content {
     display: none;
     position: absolute;
     z-index: 1;
-    min-width: 189px;
-    min-height: 40px;
+    min-height: 33px;
     background: rgba(0, 0, 0, 0.7);
 }
 
@@ -67,14 +68,13 @@
     background:#000000;
     color: rgb( 229, 216, 0 );
     border: 1px solid;
-    width: 33px;
-    height: 33px;
-    min-width: 33px;
-    min-height: 33px;
+    min-height: 40px;
+    min-width: 40px;
     text-decoration: none;
     display: block;
     border-radius: 4px;
     padding: 0;
+    margin-bottom: 5px;
 }
 
 #language_menu .dropdown {
@@ -93,15 +93,17 @@
     font-family: MicraDi;
     color: rgb( 229, 216, 0 );
     background: #000000;
-  border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
-  border-image-slice: 1;
-  border: 1px solid;
-  border-radius: 4px;
-  padding:0;
-  min-width: initial;
-    width: 33px;
-    height: 33px;
+    border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
+    border-image-slice: 1;
+    border: 1px solid;
+    border-radius: 4px;
+    padding:0;
+    margin-top:0;
+    margin-bottom: 2px;
+    min-height: 40px;
+    min-width: 40px;
     text-decoration: none;
+    line-height: 33px;
     display: block;
 }
 
