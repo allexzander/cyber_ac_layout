@@ -14,7 +14,7 @@
   }
   
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-      background-color: transparent;
+      
   }
   
   /*remove space after navbar*/
@@ -25,7 +25,7 @@
 /*Dropdown 2*/
 
 .dropdown .dropbtn, .dropdown:hover .dropbtn {
-    padding-top: 0;
+    padding-top: 5px;
     padding: 6px 12px;
 }
 
@@ -65,14 +65,11 @@
 
 /*Dropdown*/
 #language_menu .dropdown .dropbtn {
-    background:#000000;
     color: rgb( 229, 216, 0 );
-    border: 1px solid;
     min-height: 40px;
     min-width: 40px;
     text-decoration: none;
     display: block;
-    border-radius: 4px;
     padding: 0;
     margin-bottom: 5px;
 }
@@ -92,11 +89,6 @@
 #language_menu .dropdown-content a {
     font-family: MicraDi;
     color: rgb( 229, 216, 0 );
-    background: #000000;
-    border-image: linear-gradient(to top, #3b3f42 0%,#f0e7ce 23%,#ffffff 29%,#f0e7ce 47%,#ffff34 57%,#dfa223 76%,#17160f 100%);
-    border-image-slice: 1;
-    border: 1px solid;
-    border-radius: 4px;
     padding:0;
     margin-top:0;
     margin-bottom: 2px;
